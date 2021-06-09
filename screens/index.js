@@ -1,9 +1,9 @@
 import Home from "./Home"
 import OrderDelivery from "./OrderDelivery"
-import Resturant from "./Resturant"
+import Restaurant from "./Restaurant"
 
 export {
     Home,
     OrderDelivery,
-    Resturant
+    Restaurant
 }
