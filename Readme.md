@@ -12,8 +12,8 @@ Design is taken [Dribble](https://dribbble.com/shots/14527824/attachments/621506
 
 ### Home
 
-![](./screenshots/home.png)
+<img src="./screenshots/home.png" width = 200>
 
 ### Restaurant
-![](./screenshots/restaurant.png)
-![](./screenshots/restaurant1.png)
+<img src="./screenshots/restaurant.png" width = 200>
+<img src="./screenshots/restaurant1.png" width = 200>
