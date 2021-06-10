@@ -8,6 +8,7 @@ import {
     View,
     Text
 } from "react-native"
+import {OrderDelivery } from "../screens"
 import {isIphoneX} from "react-native-iphone-x-helper"
 import {
     COLORS,
@@ -201,7 +202,14 @@ const Restaurant = ({ route, navigation }) => {
                                         }}
                                         onPress = {() => editOrder("-", item.menuId, item.price)}
                                     >
-                                        <Text style={{ ...FONTS.body1}}>-</Text>
+                                        <Text 
+                                        style={{
+                                            color: (getOrderQty(item.menuId) == 0)? COLORS.darkgray : "#000",
+                                             ...FONTS.body1
+                                            }}
+                                        >
+                                            -
+                                        </Text>
                                     </TouchableOpacity>
                                     <View 
                                         style={{
@@ -395,6 +403,10 @@ const Restaurant = ({ route, navigation }) => {
                                 justifyContent: 'center',
                                 borderRadius: SIZES.radius
                             }}
+                            onPress={() => navigation.navigate(OrderDelivery, {
+                                restaurant: restaurant,
+                                location: currentLocation
+                            })}
                         >
                             <Text style={{color: COLORS.white, ...FONTS.h2}}>Order</Text>
                         </TouchableOpacity>

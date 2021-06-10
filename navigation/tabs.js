@@ -9,7 +9,7 @@ import {
      createBottomTabNavigator
 } from "@react-navigation/bottom-tabs"
 
-import { Home } from "../screens"
+import { Home, OrderDelivery } from "../screens"
 
 import Svg, {Path} from 'react-native-svg'
 
@@ -188,7 +188,7 @@ const Tabs = () => {
 
             <Tab.Screen
                 name = "User"
-                component = {Home}
+                component = {OrderDelivery}
                 options = {{
                     tabBarIcon: ({ focused }) => (
                         <Image
