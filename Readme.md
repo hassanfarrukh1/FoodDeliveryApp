@@ -6,7 +6,7 @@ Developed in React-Native a demo project which contains 3 screens
 - Restaurant
 - Order Delivery (Currently working on this)
 
-Design is taken [Dribble](https://dribbble.com/shots/14527824/attachments/6215066?mode=media)
+Design is taken from [Dribble](https://dribbble.com/shots/14527824/attachments/6215066?mode=media)
 
 ## Screen Shots
 
