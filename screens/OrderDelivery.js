@@ -1,13 +1,25 @@
 import React from "react"
 import {
     View,
-    Text
+    Text,
+    Image,
+    TouchableOpacity
 } from "react-native"
+import MapView, {PROVIDER_GOOGLE, Marker} from 'react-native-maps';
 
 const OrderDelivery = () => {
+   function renderMap() {
+       return(
+           <View style={{flex: 1}}>
+               <MapView style={{flex: 1}}>
+               </MapView>
+           </View>
+       )
+   }
+
     return (
-        <View>
-            <Text>OrderDelivery</Text>
+        <View style={{flex: 1}}>
+            {renderMap()}
         </View>
     )
 }

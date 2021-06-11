@@ -405,7 +405,7 @@ const Restaurant = ({ route, navigation }) => {
                             }}
                             onPress={() => navigation.navigate(OrderDelivery, {
                                 restaurant: restaurant,
-                                location: currentLocation
+                                currentLocation: currentLocation
                             })}
                         >
                             <Text style={{color: COLORS.white, ...FONTS.h2}}>Order</Text>
