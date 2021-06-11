@@ -17,6 +17,7 @@ import {
     SIZES, 
     icons
 } from "../constants"
+import { LogBox } from 'react-native';
 
 
 const Restaurant = ({ route, navigation }) => {
@@ -403,10 +404,13 @@ const Restaurant = ({ route, navigation }) => {
                                 justifyContent: 'center',
                                 borderRadius: SIZES.radius
                             }}
-                            onPress={() => navigation.navigate(OrderDelivery, {
-                                restaurant: restaurant,
-                                currentLocation: currentLocation
-                            })}
+                            onPress={ () =>{
+                                let params = {
+                                    restaurant: restaurant,
+                                    currentLocation: currentLocation
+                                }
+                                navigation.navigate("OrderDelivery", params)
+                            }}
                         >
                             <Text style={{color: COLORS.white, ...FONTS.h2}}>Order</Text>
                         </TouchableOpacity>
